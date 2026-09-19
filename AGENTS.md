@@ -13,7 +13,7 @@ e produzir um terceiro ficheiro Excel com a reconciliação.
 
 Este repositório é a fonte de verdade para o comportamento do agente:
 
-`https://github.com/ruialexrib/ncrf-accounting-agent`
+`https://github.com/ruialexrib/bank-reconciliation-agent`
 
 Antes de executar uma reconciliação:
 
