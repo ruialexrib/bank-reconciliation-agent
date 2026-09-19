@@ -64,7 +64,7 @@ testes/
 ## Configuração no ChatGPT
 
 1. Criar um novo Projeto no ChatGPT.
-2. Ligar o GitHub ao ChatGPT e autorizar o acesso ao repositório `ruialexrib/ncrf-accounting-agent`.
+2. Ligar o GitHub ao ChatGPT e autorizar o acesso ao repositório `ruialexrib/bank-reconciliation-agent`.
 3. Copiar para as instruções do Projeto o conteúdo de `INSTRUCOES_PROJETO_CHATGPT.md`.
 4. Carregar dois ficheiros Excel:
    - extrato bancário;
