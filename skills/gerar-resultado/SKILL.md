@@ -13,7 +13,7 @@ Produzir o entregável final:
 
 ## Estrutura
 
-Seguir integralmente `resources/formato-resultado.md`.
+Seguir integralmente `recursos/formato-resultado.md`.
 
 ## Requisitos de qualidade
 
