@@ -14,7 +14,7 @@ Criar para cada movimento:
 - referência original;
 - referência normalizada.
 
-## 2. Ordem de matching
+## 2. Ordem de correspondência
 
 Aplicar pela seguinte ordem.
 
@@ -24,8 +24,7 @@ Marcar `RECONCILIADO` quando:
 - montante coincide dentro da tolerância;
 - data está dentro da tolerância;
 - referência/documento coincide de forma inequívoca;
-
-e existe apenas um candidato plausível.
+- existe apenas um candidato plausível.
 
 ### Regra B — Montante + descrição forte
 
@@ -46,7 +45,7 @@ Marcar `RECONCILIADO_PROVAVEL` quando:
 
 ### Regra D — Agregação 1:N ou N:1
 
-Procurar combinações até ao limite definido em `resources/parametros.md`.
+Procurar combinações até ao limite definido em `recursos/parametros.md`.
 
 Uma combinação pode ser marcada `RECONCILIADO_PROVAVEL` se:
 - a soma coincide dentro da tolerância monetária;
@@ -84,7 +83,7 @@ A IA pode interpretar abreviaturas e descrições, por exemplo:
 
 A interpretação semântica **não substitui** a comparação de montantes e a análise de candidatos concorrentes.
 
-## 4. Auditabilidade
+## 4. Rastreabilidade
 
 Cada reconciliação deve indicar:
 - regra utilizada;
@@ -92,4 +91,4 @@ Cada reconciliação deve indicar:
 - diferença de valor;
 - evidência textual/referência;
 - nível de confiança;
-- IDs dos movimentos associados.
+- identificadores dos movimentos associados.
