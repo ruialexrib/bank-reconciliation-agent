@@ -4,7 +4,7 @@ Estes são os parâmetros padrão. Podem ser alterados pelo utilizador nas instr
 
 | Parâmetro | Valor padrão |
 |---|---:|
-| Tolerância de diferença de data para matching automático | ±3 dias |
+| Tolerância de diferença de data para reconciliação automática | ±3 dias |
 | Tolerância monetária | 0,01 € |
 | Máximo de movimentos numa correspondência agregada automática | 3 |
 | Correspondência exata de montante | obrigatória para RECONCILIADO, salvo agrupamentos |
@@ -19,4 +19,4 @@ Estes são os parâmetros padrão. Podem ser alterados pelo utilizador nas instr
 4. Referências/documentos têm maior peso do que texto genérico.
 5. Uma correspondência 1:N ou N:1 é permitida apenas quando a soma dos montantes coincide dentro da tolerância.
 6. Correspondências agregadas com múltiplas combinações plausíveis devem ser marcadas `REVER`.
-7. Não efetuar matching automático N:N.
+7. Não efetuar correspondência automática N:N.
