@@ -20,8 +20,8 @@ Antes de executar uma reconciliação:
 1. ler este ficheiro;
 2. consultar `skills/roteador/SKILL.md`;
 3. consultar apenas as skills necessárias;
-4. aplicar os recursos de `resources/`;
-5. gerar o resultado segundo `resources/formato-resultado.md`.
+4. aplicar os recursos de `recursos/`;
+5. gerar o resultado segundo `recursos/formato-resultado.md`.
 
 ## Regras fundamentais
 
@@ -54,7 +54,7 @@ Usar apenas:
 2. Identificar qual corresponde ao banco e qual à contabilidade.
 3. Mapear colunas.
 4. Validar e normalizar os movimentos.
-5. Aplicar matching determinístico.
+5. Aplicar correspondência determinística.
 6. Aplicar análise semântica apenas aos casos ainda não resolvidos.
 7. Identificar correspondências múltiplas ou agregadas.
 8. Executar controlos de qualidade.
