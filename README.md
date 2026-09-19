@@ -25,53 +25,54 @@ Analisar ambiguidades
         ↓
 Validar resultado
         ↓
-Gerar Resultado_reconciliacao.xlsx
+Gerar Resultado_reconciliacao_bancaria.xlsx
 ```
 
 ## Estrutura do repositório
 
 ```text
-AGENTS.md                         Regras centrais do agente
+AGENTS.md                          Regras centrais do agente
 INSTRUCOES_PROJETO_CHATGPT.md     Texto a usar nas instruções do Projeto ChatGPT
 
-resources/
-  regras-reconciliacao.md         Regras funcionais
-  formato-ficheiros.md            Como interpretar os dois ficheiros
-  formato-resultado.md            Estrutura do Excel final
-  parametros.md                   Tolerâncias e critérios configuráveis
+recursos/
+  regras-reconciliacao.md          Regras funcionais
+  formato-ficheiros.md             Como interpretar os dois ficheiros
+  formato-resultado.md             Estrutura do Excel final
+  parametros.md                    Tolerâncias e critérios configuráveis
 
 skills/
-  roteador/SKILL.md               Decide que skills devem ser consultadas
-  leitura-excel/SKILL.md          Interpreta os ficheiros carregados
-  normalizacao/SKILL.md           Normaliza os movimentos
-  reconciliacao/SKILL.md          Executa o matching
-  analise-excecoes/SKILL.md       Analisa casos ambíguos
-  gerar-resultado/SKILL.md        Cria o novo ficheiro Excel
-  controlo-qualidade/SKILL.md     Verifica o resultado final
+  roteador/SKILL.md                Decide que skills devem ser consultadas
+  leitura-excel/SKILL.md           Interpreta os ficheiros carregados
+  normalizacao/SKILL.md            Normaliza os movimentos
+  reconciliacao/SKILL.md           Executa a correspondência
+  analise-excecoes/SKILL.md        Analisa casos ambíguos
+  gerar-resultado/SKILL.md         Cria o novo ficheiro Excel
+  controlo-qualidade/SKILL.md      Verifica o resultado final
 
 prompts/
-  reconciliar.md                  Prompt de utilização
+  reconciliar.md                   Prompt de utilização
 
-examples/
+exemplos/
   extrato-bancario-exemplo.csv
   movimentos-contabilidade-exemplo.csv
   resultado-esperado.md
 
-tests/
+testes/
   casos-teste.md
 ```
 
 ## Configuração no ChatGPT
 
 1. Criar um novo Projeto no ChatGPT.
-2. Copiar para as instruções do Projeto o conteúdo de `INSTRUCOES_PROJETO_CHATGPT.md`.
-3. Garantir que o Projeto pode consultar este repositório público:
-   `https://github.com/ruialexrib/ncrf-accounting-agent`
+2. Ligar o GitHub ao ChatGPT e autorizar o acesso ao repositório `ruialexrib/ncrf-accounting-agent`.
+3. Copiar para as instruções do Projeto o conteúdo de `INSTRUCOES_PROJETO_CHATGPT.md`.
 4. Carregar dois ficheiros Excel:
    - extrato bancário;
    - movimentos contabilísticos.
 5. Pedir: **“Reconcilia estes dois ficheiros.”**
 6. O resultado esperado é um novo ficheiro Excel, não apenas uma resposta em texto.
+
+O acesso ao GitHub é feito a pedido; o repositório não é automaticamente indexado apenas por o URL constar nas instruções.
 
 ## Princípio essencial
 
