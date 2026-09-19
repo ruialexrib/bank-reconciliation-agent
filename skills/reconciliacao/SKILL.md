@@ -7,25 +7,25 @@ description: Aplicar regras determinísticas e semânticas para reconciliar movi
 
 ## Objetivo
 
-Produzir correspondências auditáveis entre movimentos do banco e da contabilidade.
+Produzir correspondências rastreáveis entre movimentos do banco e da contabilidade.
 
 ## Ordem obrigatória
 
-### 1. Matching exato forte
+### 1. Correspondência exata forte
 Procurar primeiro:
 - valor coincidente;
 - referência coincidente;
 - data dentro da tolerância;
 - candidato único.
 
-### 2. Matching por valor + descrição
+### 2. Correspondência por valor + descrição
 Para movimentos ainda não resolvidos:
 - valor coincidente;
 - data compatível;
 - descrição/entidade fortemente relacionada;
 - candidato único.
 
-### 3. Matching provável
+### 3. Correspondência provável
 Para casos com:
 - valor coincidente;
 - referência parcial ou ausente;
@@ -34,8 +34,8 @@ Para casos com:
 
 Marcar como `RECONCILIADO_PROVAVEL`, não como reconciliação definitiva.
 
-### 4. Matching agregado
-Procurar 1:N e N:1 dentro do limite configurado.
+### 4. Correspondência agregada
+Procurar relações 1:N e N:1 dentro do limite configurado.
 A soma tem de coincidir dentro da tolerância.
 
 ### 5. Exceções
@@ -48,7 +48,7 @@ Um movimento não pode ser usado em duas reconciliações diferentes, salvo quan
 ## Explicabilidade
 
 Cada correspondência deve guardar:
-- IDs;
+- identificadores;
 - regra;
 - diferenças;
 - evidência;
