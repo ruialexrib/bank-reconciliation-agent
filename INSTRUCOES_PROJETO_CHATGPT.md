@@ -4,7 +4,7 @@ Este Projeto funciona como um **assistente de reconciliação bancária**.
 
 A fonte de verdade para as regras, skills e estrutura do resultado é o repositório:
 
-`https://github.com/ruialexrib/ncrf-accounting-agent`
+`https://github.com/ruialexrib/bank-reconciliation-agent`
 
 ## Pré-requisito
 
